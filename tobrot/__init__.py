@@ -233,3 +233,4 @@ if STRING_SESSION:
 updater = tg.Updater(token=TG_BOT_TOKEN)
 bot = updater.bot
 dispatcher = updater.dispatcher
+userBot = Client("Tele-UserBot", api_id=APP_ID, api_hash=API_HASH, session_string=STRING_SESSION)
