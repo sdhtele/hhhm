@@ -65,8 +65,8 @@ API_HASH = os.environ.get("API_HASH")
 OWNER_ID = int(os.environ.get("OWNER_ID"))
 
 # Authorised Chat Functions >>>>>>>>>>>
-AUTH_CHANNEL = [int(x) for x in os.environ.get("AUTH_CHANNEL", "-1001270496331 -1001508663868").split()]
-SUDO_USERS = [int(sudos) if (' ' not in os.environ.get('SUDO_USERS', '')) else int(sudos) for sudos in os.environ.get('SUDO_USERS', '').split()]
+AUTH_CHANNEL = [int(x) for x in os.environ.get("AUTH_CHANNEL").split()]
+SUDO_USERS = [int(sudos) if (' ' not in os.environ.get('SUDO_USERS")) else int(sudos) for sudos in os.environ.get('SUDO_USERS', '').split()]
 AUTH_CHANNEL.append(OWNER_ID)
 AUTH_CHANNEL += SUDO_USERS
 # Download Directory >>>>>>>>>>>
@@ -81,7 +81,7 @@ FREE_USER_MAX_FILE_SIZE = 50000000
 # chunk size that should be used with requests
 CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", "128"))
 # default thumbnail to be used in the videos
-DEF_THUMB_NAIL_VID_S = os.environ.get("DEF_THUMB_NAIL_VID_S", "https://telegra.ph/file/3a7f09b89943b51cdba38.jpg")
+DEF_THUMB_NAIL_VID_S = os.environ.get("DEF_THUMB_NAIL_VID_S")
 # maximum message length in Telegram
 MAX_MESSAGE_LENGTH = 4096
 # set timeout for subprocess
@@ -114,9 +114,9 @@ YTDL_COMMAND = os.environ.get("YTDL_COMMAND", "ytdl")
 GYTDL_COMMAND = os.environ.get("GYTDL_COMMAND", "gytdl")
 
 #Bot Command [RClone]  >>>>>>>>>>>
-RCLONE_CONFIG = os.environ.get("RCLONE_CONFIG", "")
-DESTINATION_FOLDER = os.environ.get("DESTINATION_FOLDER", "FuZionXBot")
-INDEX_LINK = os.environ.get("INDEX_LINK", "https://covid.demonn.workers.dev/0:/FuZionXBot https://infyplexultra.mysterydemon.workers.dev/0:/FuZionXBot")
+RCLONE_CONFIG = os.environ.get("RCLONE_CONFIG")
+DESTINATION_FOLDER = os.environ.get("DESTINATION_FOLDER")
+INDEX_LINK = os.environ.get("INDEX_LINK")
 TELEGRAM_LEECH_COMMAND = os.environ.get("TELEGRAM_LEECH_COMMAND", "tleech")
 TELEGRAM_LEECH_UNZIP_COMMAND = os.environ.get("TELEGRAM_LEECH_UNZIP_COMMAND", "tleechunzip")
 CANCEL_COMMAND_G = os.environ.get("CANCEL_COMMAND_G", "cancel")
@@ -141,7 +141,7 @@ HELP_COMMAND = os.environ.get("HELP_COMMAND", "help")
 SPEEDTEST = os.environ.get("SPEEDTEST", "speedtest")
 TSEARCH_COMMAND = os.environ.get("TSEARCH_COMMAND", "tshelp")
 MEDIAINFO_CMD = os.environ.get("MEDIAINFO_CMD", "mediainfo")
-UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "@FuZionX")
+UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL")
 CAP_STYLE = os.environ.get("CAP_STYLE", "code")
 BOT_NO = os.environ.get("BOT_NO", "")
 
@@ -175,7 +175,7 @@ DEF_IMDB_TEMPLATE = os.environ.get("IMDB_TEMPLATE", """<i><b>⚡𝐓𝐢𝐭𝐥
 
 <b>⚡𝐒𝐭𝐨𝐫𝐲 𝐋𝐢𝐧𝐞: </b><code>{plot}</code>
 
-⚡️𝐉𝐨𝐢𝐧 𝐍𝐨𝐰 :  @FuZionX </i>
+⚡️𝐉𝐨𝐢𝐧 𝐍𝐨𝐰 :  @sxrips </i>
 
 ⚡️✅ 𝑪𝒍𝒊𝒄𝒌 𝑫𝒐𝒘𝒏 𝒂𝒏𝒅 𝑺𝒕𝒂𝒓𝒕 𝒕𝒉𝒆 𝑩𝒐𝒕 𝒕𝒐 𝑮𝒆𝒕 𝒕𝒉𝒆 𝑭𝒊𝒍𝒆 ✅ !! ⬇️ ⬇️""")
 
