@@ -66,7 +66,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID"))
 
 # Authorised Chat Functions >>>>>>>>>>>
 AUTH_CHANNEL = [int(x) for x in os.environ.get("AUTH_CHANNEL").split()]
-SUDO_USERS = [int(sudos) if (' ' not in os.environ.get('SUDO_USERS")) else int(sudos) for sudos in os.environ.get('SUDO_USERS', '').split()]
+SUDO_USERS = [int(sudos) if (' ' not in os.environ.get('SUDO_USERS')) else int(sudos) for sudos in os.environ.get('SUDO_USERS', '').split()]
 AUTH_CHANNEL.append(OWNER_ID)
 AUTH_CHANNEL += SUDO_USERS
 # Download Directory >>>>>>>>>>>
