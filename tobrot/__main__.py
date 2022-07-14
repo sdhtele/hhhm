@@ -121,8 +121,8 @@ async def start(client, message):
     """/start command"""
     buttons = [
             [
-                InlineKeyboardButton('🚦 Bot Stats 🚦', url='https://t.me/FXTorrentz/28'),
-                InlineKeyboardButton('🛃 FX Group 🛃', url='https://t.me/+BgIhdNizM61jOGNl'),
+                InlineKeyboardButton('🚦 Bot Stats 🚦', url='https://t.me/sxrips'),
+                InlineKeyboardButton('🛃 SX Group 🛃', url='https://t.me/+o7H2MZzStuM1N2Iy'),
             ]
             ]
     reply_markup=InlineKeyboardMarkup(buttons)
@@ -130,11 +130,11 @@ async def start(client, message):
     start_string = f'''
 ┏ <i>Dear {u_men}</i>,
 ┃
-┃ <i>If You Want To Use Me, You Have To Join @FXTorrentz</i>
+┃ <i>If You Want To Use Me, You Have To Join @sxrips</i>
 ┃
 ┣ <b>NOTE:</b> <code>All The Uploaded Leeched Contents By You Will Be Sent Here In Your Private Chat From Now.</code>
 ┃
-┗━♦️ℙ𝕠𝕨𝕖𝕣𝕖𝕕 𝔹𝕪 {UPDATES_CHANNEL}♦️
+┗━♦️ℙ𝕠𝕨𝕖𝕣𝕖𝕕 𝔹𝕪 Sxrips♦️
 '''
     if message.chat.type == enums.ChatType.PRIVATE:
         await message.reply_text(
