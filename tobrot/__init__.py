@@ -59,10 +59,10 @@ for imp in ["TG_BOT_TOKEN", "APP_ID", "API_HASH", "OWNER_ID", "AUTH_CHANNEL"]:
 '''
 
 # The Telegram API things >>>>>>>>>>>
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5139162631:AAHGWHHbnbu7k5jOjXW-axcNuJcSRpBktr4")
-APP_ID = os.environ.get("APP_ID", "6878048")
-API_HASH = os.environ.get("API_HASH", "3833ae3a7415af46df46a83a3ba2c432")
-OWNER_ID = int(os.environ.get("OWNER_ID", "1242011540"))
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN")
+APP_ID = os.environ.get("APP_ID")
+API_HASH = os.environ.get("API_HASH")
+OWNER_ID = int(os.environ.get("OWNER_ID"))
 
 # Authorised Chat Functions >>>>>>>>>>>
 AUTH_CHANNEL = [int(x) for x in os.environ.get("AUTH_CHANNEL", "-1001270496331 -1001508663868").split()]
@@ -146,19 +146,19 @@ CAP_STYLE = os.environ.get("CAP_STYLE", "code")
 BOT_NO = os.environ.get("BOT_NO", "")
 
 #Bot Command [Token Utils]  >>>>>>>>>>>
-UPTOBOX_TOKEN = os.environ.get("UPTOBOX_TOKEN", "")
-EMAIL = os.environ.get("EMAIL", "mysterysd.sd@gmail.com")
-PWSSD = os.environ.get("PWSSD", "S#D#97531")
-GDRIVE_FOLDER_ID = os.environ.get("GDRIVE_FOLDER_ID", "0AN3LeVWuYvwEUk9PVA")
-CRYPT = os.environ.get("CRYPT", "S3htTzl3aDdHUWdJWDhLZVV2MlpSVGlkZ0RVYU0xc29oQlNKSENGakRaOD0%3D")
-#PHPSESSID = os.environ.get("PHPSESSID", "dslvec02r5mo3co40vsq6154eh")
-HUB_CRYPT = os.environ.get("HUB_CRYPT", "dVAwSkpDU0FWVnNYV3hSZU40RkhrRU53RzVmdjVBbFd3RThPeFllMmhSND0%3D")
-DRIVEFIRE_CRYPT = os.environ.get("DRIVEFIRE_CRYPT", "dVAwSkpDU0FWVnNYV3hSZU40RkhrRU53RzVmdjVBbFd3RThPeFllMmhSND0%3D")
-KATDRIVE_CRYPT = os.environ.get("KATDRIVE_CRYPT", "WlFKUldtYWJzNmJlWkEvajRscmVrSjhJRm8yNXdDZklqYXpxd1AxQ0Zwcz0%3D; __gads=ID=d116cbcd46cd789b:T=1653563306:S=ALNI_Mb-QZgpbYcINdk3rhsqxydUNpVLeQ")
-KOLOP_CRYPT = os.environ.get("KOLOP_CRYPT", "WlFKUldtYWJzNmJlWkEvajRscmVrSjhJRm8yNXdDZklqYXpxd1AxQ0Zwcz0%3D")
-DRIVEBUZZ_CRYPT = os.environ.get("DRIVEBUZZ_CRYPT", "dVAwSkpDU0FWVnNYV3hSZU40RkhrRU53RzVmdjVBbFd3RThPeFllMmhSND0%3D")
-GADRIVE_CRYPT = os.environ.get("GADRIVE_CRYPT", "dVAwSkpDU0FWVnNYV3hSZU40RkhrRU53RzVmdjVBbFd3RThPeFllMmhSND0%3D")
-STRING_SESSION = os.environ.get("STRING_SESSION", "")
+UPTOBOX_TOKEN = os.environ.get("UPTOBOX_TOKEN")
+EMAIL = os.environ.get("EMAIL")
+PWSSD = os.environ.get("PWSSD")
+GDRIVE_FOLDER_ID = os.environ.get("GDRIVE_FOLDER_ID")
+CRYPT = os.environ.get("CRYPT")
+#PHPSESSID = os.environ.get("PHPSESSID")
+HUB_CRYPT = os.environ.get("HUB_CRYPT")
+DRIVEFIRE_CRYPT = os.environ.get("DRIVEFIRE_CRYPT")
+KATDRIVE_CRYPT = os.environ.get("KATDRIVE_CRYPT")
+KOLOP_CRYPT = os.environ.get("KOLOP_CRYPT")
+DRIVEBUZZ_CRYPT = os.environ.get("DRIVEBUZZ_CRYPT")
+GADRIVE_CRYPT = os.environ.get("GADRIVE_CRYPT")
+STRING_SESSION = os.environ.get("STRING_SESSION")
 
 #Bot Command [IMDB]  >>>>>>>>>>>
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "")
@@ -180,15 +180,15 @@ DEF_IMDB_TEMPLATE = os.environ.get("IMDB_TEMPLATE", """<i><b>⚡𝐓𝐢𝐭𝐥
 ⚡️✅ 𝑪𝒍𝒊𝒄𝒌 𝑫𝒐𝒘𝒏 𝒂𝒏𝒅 𝑺𝒕𝒂𝒓𝒕 𝒕𝒉𝒆 𝑩𝒐𝒕 𝒕𝒐 𝑮𝒆𝒕 𝒕𝒉𝒆 𝑭𝒊𝒍𝒆 ✅ !! ⬇️ ⬇️""")
 
 #Bot Command [Bot PM & Log Channel]  >>>>>>>>>>>
-LEECH_LOG = os.environ.get("LEECH_LOG", "-1001569981856")
-EX_LEECH_LOG = os.environ.get("EX_LEECH_LOG", "")
-EXCEP_CHATS = os.environ.get("EXCEP_CHATS", "")
-BOT_PM = os.environ.get("BOT_PM", "True")
-SERVER_HOST = os.environ.get("SERVER_HOST", "Heroku")
+LEECH_LOG = os.environ.get("LEECH_LOG")
+EX_LEECH_LOG = os.environ.get("EX_LEECH_LOG")
+EXCEP_CHATS = os.environ.get("EXCEP_CHATS")
+BOT_PM = os.environ.get("BOT_PM")
+SERVER_HOST = os.environ.get("SERVER_HOST")
 
 # 4 GB Upload Utils >>>>>>>>>>>
-PRM_USERS = os.environ.get("PRM_USERS", "1242011540 503170505")
-PRM_LOG = os.environ.get("PRM_LOG", "-1001620169370")
+PRM_USERS = os.environ.get("PRM_USERS")
+PRM_LOG = os.environ.get("PRM_LOG")
 
 BOT_START_TIME = time.time()
 # dict to control uploading and downloading
